@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img src="images/profile.jpg" alt="Your Profile Picture" />
+        <h1>Abhishek Kumar</h1>
+        <p>Front-End Developer | JavaScript | React | Web Design</p>
+        <a href="images/Abhishek Kumar CV.pdf"
+          ><button id="cv">Download My CV</button></a
+        >
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Abhishek Kumar, a passionate front-end developer who loves
+        learning and solving challenges. I’m always curious about how websites
+        are built and love diving into the details to figure things out.
+        Whenever I come across something new or difficult, I see it as a chance
+        to learn and grow.
+      </p>
+      <p>
+        Currently, I’m focused on testing and improving my skills through
+        real-world projects, as I believe hands-on experience is the best way to
+        learn. My goal is to build large, impactful web applications that make a
+        difference. If something seems difficult, I don’t back away—I make it my
+        priority to tackle it head-on.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-buttons">
+        <button class="skill-btn" data-skill="html-css">HTML & CSS</button>
+        <button class="skill-btn" data-skill="javascript">JavaScript</button>
+        <button class="skill-btn" data-skill="react">React.js</button>
+        <button class="skill-btn" data-skill="bootstrap">Bootsrap</button>
+        <button class="skill-btn" data-skill="bootstrap">JQuery</button>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card-container">
+          <div class="project-card" data-skill="html-css">
+            <img src="images/html css js restorent site.jpg" alt="Project 1" />
+
+            <a href="images/html css js restorent site.mp4">
+              <video
+                class="project-video"
+                src="images/html css js restorent site.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+
+          <div class="project-discription">
+            <h2>Restorent Home Page</h2>
+            <div>
+              This Egg Restaurant project was a valuable learning experience
+              where I applied and strengthened my front-end development
+              skills.<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                By creating this website, I learned key concepts like building a
+                responsive layout, adding form validation for easy table
+                booking, and creating an image slider to make the site more
+                engaging. Integrating Google Maps to show the restaurant’s
+                location also helped me understand working with APIs. This
+                project allowed me to blend design with interactive features,
+                boosting my skills in HTML, CSS, and JavaScript while building a
+                user-friendly, attractive restaurant site.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="javascript">
+            <img src="images/marks calculator js.jpg" alt="Project 2" />
+            <a href="images/marks calculator js.mp4">
+              <video
+                class="project-video"
+                src="images/marks calculator js.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Marks Calculator in js</h2>
+            <div>
+              The Marks Calculator project is a tool that calculates a student's
+              total marks, percentage, and grade based on their scores.<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                I developed this project using JavaScript to handle conditional
+                logic allowing the calculator to display the grade directly in
+                an input field—a feature that earned me recognition from my
+                teacher. While others faced challenges implementing this, I
+                quickly solved it, strengthening my understanding of JavaScript
+                comparison and conditional flows. This project was an excellent
+                opportunity to practice logic building and improve my skills in
+                creating interactive and functional web tools.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="project-card" data-skill="react">
+            <img src="images/to do list app react.jpg" alt="Project 3" />
+            <a href="images/to do list app react.mp4">
+              <video
+                class="project-video"
+                src="images/to do list app react.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>To-Dolist in React js</h2>
+            <div>
+              This To-Do List App includes a unique "Important Tasks" feature
+              that lets users prioritize certain tasks. First, tasks are added
+              to the standard to-do list<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                and from there, they can be moved to the "Important Tasks" list
+                for easy organization. Working on this project was my first
+                experience with state management in React, where I learned how
+                crucial the useState hook is for managing interactive data. This
+                project opened my eyes to how powerful state management can be
+                and gave me the confidence to create complex features in React.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="project-card" data-skill="react">
+            <img src="images/quiz app react.jpg" alt="Project 3" />
+            <a href="images/react quiz app.mp4">
+              <video
+                class="project-video"
+                src="images/react quiz app.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Quiz App In React js</h2>
+            <div>
+              This Quiz App, built in React, includes a scoring system that
+              tracks correct answers and a "Play Again" button for multiple
+              attempts<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                As users select answers, their score updates based on
+                correctness, providing a dynamic and interactive experience.
+                Developing this app gave me a strong boost in confidence,
+                helping me gauge my progress in React and better understand my
+                skills with handling state and component interactions. This
+                project has been a great stepping stone in my React journey,
+                reinforcing my knowledge of hooks and overall React
+                functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="javascript">
+            <img src="images/quiz app js.jpg" alt="Project 3" />
+            <a href="images/quiz app js.mp4">
+              <video
+                class="project-video"
+                src="images/quiz app js.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Quiz App In js</h2>
+            <div>
+              It is a egg restorent website hime page it have a custom slider to
+              shocace dishes<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                and a good looking navigation baar and a form validation
+                function also a form to book a table
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="bootstrap">
+            <img src="images/Bootsrap organic.jpg" alt="Project 3" />
+            <a href="images/Bootsrap organic.mp4">
+              <video
+                class="project-video"
+                src="images/Bootsrap organic.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Organic Store Bootsrap</h2>
+            <div>
+              It is a egg restorent website hime page it have a custom slider to
+              shocace dishes<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                and a good looking navigation baar and a form validation
+                function also a form to book a table
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="bootstrap">
+            <img src="images/portfolio.jpg" alt="Project 3" />
+            <a href="images/portfolio.mp4"
+              ><video
+                class="project-video"
+                src="images/portfolio.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Portfolio In Bootsrap</h2>
+            <div>
+              It is a egg restorent website hime page it have a custom slider to
+              shocace dishes<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                and a good looking navigation baar and a form validation
+                function also a form to book a table
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="javascript">
+            <img src="images/calculator js.jpg" alt="Project 3" />
+            <a href="images/calculator js.mp4">
+              <video
+                class="project-video"
+                src="images/calculator js.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+          <div class="project-discription">
+            <h2>Calculator In Js</h2>
+            <div>
+              It is a egg restorent website hime page it have a custom slider to
+              shocace dishes<span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+              <p class="iteme">
+                and a good looking navigation baar and a form validation
+                function also a form to book a table
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+      <h2
+        style="
+          color: aliceblue;
+          text-decoration: underline solidrgb(231, 231, 255);
+        "
+      >
+        Contact Me
+      </h2>
+      <p>Email:<a href="abhishekarya@gmail.com"> abhishekarya@gmail.com</a></p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/abhishek-kumar-93a3a8288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >LinkedIn Profile</a
+        >
+      </p>
+      <p>
+        Instagram:
+        <a href="https://www.instagram.com/1_onlyak/?hl=en">Instagram</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
