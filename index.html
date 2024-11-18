@@ -18,12 +18,16 @@
         </ul>
       </nav>
       <div class="profile">
-        <img src="images/profile.jpg" alt="Your Profile Picture" />
-        <h1>Abhishek Kumar</h1>
-        <p>Front-End Developer | JavaScript | React | Web Design</p>
-        <a href="images/Abhishek Kumar CV.pdf"
-          ><button id="cv">Download My CV</button></a
-        >
+        <div class="profile-text">
+          <h1>Abhishek Kumar</h1>
+          <p>Front-End Developer | JavaScript | React | Web Design</p>
+          <a href="images/Abhishek Kumar CV.pdf"
+            ><button id="cv">Download My CV</button></a
+          >
+        </div>
+        <div class="profile-image">
+          <img src="images/profile.jpg" alt="Your Profile Picture" />
+        </div>
       </div>
     </header>
 
@@ -64,6 +68,88 @@
       <div class="projects-grid">
         <div class="card-container">
           <div class="project-card" data-skill="html-css">
+            <img src="images/Product Filter app in react.jpg" alt="Project 1" />
+
+            <a href="images/Product Filter app in react.mp4">
+              <video
+                class="project-video"
+                src="images/Product Filter app in react.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+
+          <div class="project-discription">
+            <h2>Product Filter App React</h2>
+            <div>
+              This Product Filter App was an exciting project where I
+              implemented dynamic filtering features using React The app allows
+              users to sort and filter products
+              <p class="iteme">
+                based on various criteria, providing a seamless and interactive
+                experience. Working on this project helped me better understand
+                state management with the useState hook and how to handle user
+                inputs effectively. It also strengthened my skills in creating
+                reusable components and managing props for dynamic
+                functionality. This project gave me valuable insights into
+                building feature-rich, user-friendly React applications
+              </p>
+              <span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="html-css">
+            <img src="images/Product filter app in js.png" alt="Project 1" />
+
+            <a href="images/Product filter app in js.mp4">
+              <video
+                class="project-video"
+                src="images/Product filter app in js.mp4"
+                muted
+              ></video
+            ></a>
+          </div>
+
+          <div class="project-discription">
+            <h2>Product Filter App Js</h2>
+            <div>
+              This Product Filter App includes features like filtering products
+              by maximum and minimum price, available categories, and a clear
+              filters
+              <p class="iteme">
+                option to reset selectionsI used the forEach method to handle
+                these filters dynamically and update the product display based
+                on user input. Building this app helped me better understand
+                JavaScript array methods, DOM manipulation, and creating
+                interactive features. It was a practical project that enhanced
+                my ability to implement real-world functionality in web
+                applications.
+              </p>
+              <span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="project-card" data-skill="html-css">
             <img src="images/html css js restorent site.jpg" alt="Project 1" />
 
             <a href="images/html css js restorent site.mp4">
@@ -80,7 +166,18 @@
             <div>
               This Egg Restaurant project was a valuable learning experience
               where I applied and strengthened my front-end development
-              skills.<span
+              skills.By creating this website
+              <p class="iteme">
+                I learned key concepts like building a responsive layout, adding
+                form validation for easy table booking, and creating an image
+                slider to make the site more engaging. Integrating Google Maps
+                to show the restaurant’s location also helped me understand
+                working with APIs. This project allowed me to blend design with
+                interactive features, boosting my skills in HTML, CSS, and
+                JavaScript while building a user-friendly, attractive restaurant
+                site.
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -89,16 +186,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                By creating this website, I learned key concepts like building a
-                responsive layout, adding form validation for easy table
-                booking, and creating an image slider to make the site more
-                engaging. Integrating Google Maps to show the restaurant’s
-                location also helped me understand working with APIs. This
-                project allowed me to blend design with interactive features,
-                boosting my skills in HTML, CSS, and JavaScript while building a
-                user-friendly, attractive restaurant site.
-              </p>
             </div>
           </div>
         </div>
@@ -118,7 +205,19 @@
             <h2>Marks Calculator in js</h2>
             <div>
               The Marks Calculator project is a tool that calculates a student's
-              total marks, percentage, and grade based on their scores.<span
+              total marks, percentage, and grade based on their scores.I
+              developed this project using JavaScript
+              <p class="iteme">
+                to handle conditional logic allowing the calculator to display
+                the grade directly in an input field—a feature that earned me
+                recognition from my teacher. While others faced challenges
+                implementing this, I quickly solved it, strengthening my
+                understanding of JavaScript comparison and conditional flows.
+                This project was an excellent opportunity to practice logic
+                building and improve my skills in creating interactive and
+                functional web tools.
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -127,16 +226,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                I developed this project using JavaScript to handle conditional
-                logic allowing the calculator to display the grade directly in
-                an input field—a feature that earned me recognition from my
-                teacher. While others faced challenges implementing this, I
-                quickly solved it, strengthening my understanding of JavaScript
-                comparison and conditional flows. This project was an excellent
-                opportunity to practice logic building and improve my skills in
-                creating interactive and functional web tools.
-              </p>
             </div>
           </div>
         </div>
@@ -156,15 +245,7 @@
             <div>
               This To-Do List App includes a unique "Important Tasks" feature
               that lets users prioritize certain tasks. First, tasks are added
-              to the standard to-do list<span
-                class="accordion"
-                style="
-                  color: #38f4;
-                  cursor: pointer;
-                  text-decoration: underline;
-                "
-                >Read More</span
-              >
+              to the standard to-do list
               <p class="iteme">
                 and from there, they can be moved to the "Important Tasks" list
                 for easy organization. Working on this project was my first
@@ -173,6 +254,15 @@
                 project opened my eyes to how powerful state management can be
                 and gave me the confidence to create complex features in React.
               </p>
+              <span
+                class="accordion"
+                style="
+                  color: #38f4;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+                >Read More</span
+              >
             </div>
           </div>
         </div>
@@ -192,7 +282,17 @@
             <div>
               This Quiz App, built in React, includes a scoring system that
               tracks correct answers and a "Play Again" button for multiple
-              attempts<span
+              attempts As users select answers
+              <p class="iteme">
+                their score updates based on correctness, providing a dynamic
+                and interactive experience. Developing this app gave me a strong
+                boost in confidence, helping me gauge my progress in React and
+                better understand my skills with handling state and component
+                interactions. This project has been a great stepping stone in my
+                React journey, reinforcing my knowledge of hooks and overall
+                React functionality.
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -201,16 +301,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                As users select answers, their score updates based on
-                correctness, providing a dynamic and interactive experience.
-                Developing this app gave me a strong boost in confidence,
-                helping me gauge my progress in React and better understand my
-                skills with handling state and component interactions. This
-                project has been a great stepping stone in my React journey,
-                reinforcing my knowledge of hooks and overall React
-                functionality.
-              </p>
             </div>
           </div>
         </div>
@@ -229,8 +319,19 @@
           <div class="project-discription">
             <h2>Quiz App In js</h2>
             <div>
-              It is a egg restorent website hime page it have a custom slider to
-              shocace dishes<span
+              This Quiz App, created with JavaScript, was a great learning
+              experience for building interactive features
+              <p class="iteme">
+                . The app includes hover effects that highlight answers with a
+                background color. When a correct answer is clicked, it turns
+                green, while incorrect answers turn red. Once an answer is
+                selected, further clicks are disabled to maintain accuracy. At
+                the end, users see their score along with a "Play Again" button
+                to restart the quiz. This project was a valuable practice for me
+                to understand event handling, conditional logic, and creating
+                user-friendly functionality in JavaScript
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -239,10 +340,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                and a good looking navigation baar and a form validation
-                function also a form to book a table
-              </p>
             </div>
           </div>
         </div>
@@ -261,8 +358,19 @@
           <div class="project-discription">
             <h2>Organic Store Bootsrap</h2>
             <div>
-              It is a egg restorent website hime page it have a custom slider to
-              shocace dishes<span
+              This Organic Vegetable Store project was my introduction to
+              Bootstrap, where I learned how to build
+              <p class="iteme">
+                responsive and visually appealing layouts efficiently The
+                website showcases a clean, professional design, perfect for an
+                organic theme. Through this project, I gained the confidence to
+                create various components like navigation bars, grids, and cards
+                using Bootstrap’s powerful framework. This experience solidified
+                my ability to build fully responsive and modern websites, and I
+                can confidently say I’m prepared to create any design using
+                Bootstrap.
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -271,10 +379,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                and a good looking navigation baar and a form validation
-                function also a form to book a table
-              </p>
             </div>
           </div>
         </div>
@@ -293,8 +397,19 @@
           <div class="project-discription">
             <h2>Portfolio In Bootsrap</h2>
             <div>
-              It is a egg restorent website hime page it have a custom slider to
-              shocace dishes<span
+              This Portfolio project allowed me to explore and utilize a wide
+              range of Bootstrap components including
+              <p class="iteme">
+                sliders, navigation and cards, . I also incorporated animation
+                effects to make the design more engaging and interactive. This
+                project helped me deepen my understanding of Bootstrap’s
+                features and how to combine them creatively to build a polished,
+                professional-looking website. Overall, it was a great learning
+                experience that improved my design and development skills while
+                showcasing my ability to create visually appealing and
+                functional web layouts.
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -303,10 +418,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                and a good looking navigation baar and a form validation
-                function also a form to book a table
-              </p>
             </div>
           </div>
         </div>
@@ -325,8 +436,19 @@
           <div class="project-discription">
             <h2>Calculator In Js</h2>
             <div>
-              It is a egg restorent website hime page it have a custom slider to
-              shocace dishes<span
+              The Calculator project was one of my first challenges in
+              JavaScript . As a beginner I focused on creating
+              <p class="iteme">
+                everything from scratch which made it a truly valuable learning
+                experience. I learned how to use functions to handle elements,
+                like buttons and inputs, and how to manage calculations
+                dynamically. Though simple, this project was a great challenge
+                that helped me understand JavaScript fundamentals and the
+                importance of structure and logic in coding. It reinforced my
+                problem-solving skills and boosted my confidence in building
+                interactive applications
+              </p>
+              <span
                 class="accordion"
                 style="
                   color: #38f4;
@@ -335,10 +457,6 @@
                 "
                 >Read More</span
               >
-              <p class="iteme">
-                and a good looking navigation baar and a form validation
-                function also a form to book a table
-              </p>
             </div>
           </div>
         </div>
