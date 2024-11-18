@@ -18,6 +18,8 @@ skillButtons.forEach(button => {
     });
 });
 
+
+
 // Hover effects for playing videos
 const projectCard = document.querySelectorAll('.project-card');
 
@@ -37,20 +39,33 @@ projectCards.forEach(card => {
     });
 });
 
+
+
 /*accordion section */
 
 
 var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    var iteme = this.nextElementSibling;
-    if (iteme.style.display === "block") {
+
+    // Find the parent card-container
+    var cardContainer = this.closest(".card-container");
+
+    // Find the iteme element
+    var iteme = this.previousElementSibling;
+
+    // Toggle the expanded class and iteme visibility
+    if (cardContainer.classList.contains("expanded")) {
+      cardContainer.classList.remove("expanded");
       iteme.style.display = "none";
+      this.textContent = "Read More";
     } else {
+      cardContainer.classList.add("expanded");
       iteme.style.display = "block";
+      this.textContent = "Read Less";
     }
   });
 }
+
