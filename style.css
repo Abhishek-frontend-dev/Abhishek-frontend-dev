@@ -189,10 +189,12 @@ h2 {
 }
 
 .card-container{
-  width: 300px;
-    height: auto;
-    background-color: #f4f4f4;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ width: 300px;
+  height: max-content; 
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Prevent overlap */
+  overflow: hidden; /* Prevent overflow */
 }
 /* Footer */
 footer {
@@ -204,20 +206,27 @@ footer {
 
 .project-discription{
 text-align: center;
-width: 100%;
-height: auto;
-font-size: 20px;
-margin-top: 3%;
+  font-size: 18px;
+  margin-top: 20px;
 }
 .project-discription h2{
   font-size: 25px;
   text-decoration: none;
-  padding: 0.4rem;
+  padding: 0.2rem;
 }
 .iteme{
   display: none;
+  padding: 10px;
+    background-color: #f9f9f9;
+    height: auto;
+}
+.card-container.expanded .iteme {
+  display: block;
 }
 
+.card-container {
+  transition: max-height 0.3s ease-in-out;
+}
 footer a {
   color: #ff6f61;
   text-decoration: none;
@@ -227,4 +236,3 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
